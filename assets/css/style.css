@@ -1,0 +1,162 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    float: left;
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    background-color: rgb(255, 186, 0);
+    z-index: 1;
+}
+
+header .header-ele {
+    list-style-type: none;
+    display: inline-block;
+}
+header .header-text {
+    float: left;
+}
+header .header-text > a {
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 55px;
+    margin: 0 25px;
+}
+header .header-text:hover > a {
+    color: #fff;
+    display: block;
+}
+header .khoahoc-icon {
+    font-size: 12px;
+}
+header .sub-khoahoc,
+header .others {
+    background-color: #fff;
+    position: absolute;
+    list-style-type: none;
+    min-width: 144.86px;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+header .others {
+    right: 0px;
+}
+header .sub-khoahoc a,
+header .others a {
+    text-decoration: none;
+    color: black;
+    padding: 13px;
+    display: block;
+}
+header .header-text:hover .sub-khoahoc,
+header .others-icon:hover .others {
+    display: block;
+}
+header .others-icon:hover,
+header .search-icon:hover {
+    cursor: pointer;
+    color: #fff;
+}
+header .sub-khoahoc a:hover,
+header .others a:hover {
+    background-color: rgb(211, 203, 203);
+    border-radius: 4px;
+}
+header .btn {
+    display: block;
+    float: right;
+    line-height: 55px;
+}
+header .search-icon,
+header .others-icon {
+    line-height: 55px;
+    display: inline-block;
+}
+header .others-icon{
+    padding: 0 50px;
+    position: relative;
+}
+nav img {
+    width: 100vw;
+    padding: 80px 64px 30px;
+    position: relative;
+}
+nav .thongbao-ele {
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style-type: none;
+    width: 50%;
+    position: absolute;
+    border-radius: 4px;
+    top: 130px;
+    right: 64px;
+    margin-bottom: 64px;
+}
+nav .thongbao-ele a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(112, 101, 101);
+    display: block;
+    padding: 10px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav .thongbao-ele a:hover {
+    border-radius: 4px;
+    /* background-color: rgb(211, 203, 203); */
+    color: rgb(255, 186, 0);
+}
+section .khoahoc-main {
+    display: block;
+    background-color: rgb(244, 241, 248);
+    padding-bottom: 30px;
+}
+section .section-header {
+    display: block;
+    position: relative;
+}
+section .section-header > p {
+    display: inline-block;
+    padding: 30px 40px 0px 70px;
+}
+section .xemtatca {
+    display: inline-block;
+    padding: 30px;
+    right: 30px;
+    color: rgb(255, 186, 0);
+    position:absolute; 
+    text-decoration: none;
+}
+section .xemtatca:hover {
+    text-decoration: underline;
+}
+section .khoahoc-ele {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 27%;
+    margin-left: 70px;
+    text-decoration: none;
+    color: #000;
+}
+section .khoahoc-ele img {
+    width: 100%;
+}
+section .khoahoc-ele > p {
+    display: block;
+    margin: 20px 30px 10px 30px;
+}
+
