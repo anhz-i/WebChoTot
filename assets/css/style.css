@@ -70,7 +70,9 @@ header .search-icon:hover {
     color: #fff;
 }
 header .sub-khoahoc a:hover,
-header .others a:hover {
+header .others a:hover, 
+section .sukien-sections li:hover,
+section .kinhnghiem-sections li:hover{
     background-color: rgb(211, 203, 203);
     border-radius: 4px;
 }
@@ -94,21 +96,41 @@ nav img {
     position: relative;
 }
 nav .thongbao-ele {
+    top: 130px;
+    position: absolute;
+}
+nav .thongbao-ele,
+section .sukien-sections,
+section .kinhnghiem-sections  {
     display: block;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     list-style-type: none;
     width: 50%;
-    position: absolute;
     border-radius: 4px;
-    top: 130px;
-    right: 64px;
+    right: 60px;
     margin-bottom: 64px;
 }
-nav .thongbao-ele a {
+section .kinhnghiem-sections  {
+    width: 43%;
+    margin-left: 64px;
+}
+section .sukien-sections {
+    float: right;
+    margin-right: 30px;
+    width: 43%;
+}
+nav .thongbao-ele a,
+section .sukien-sections a,
+section .kinhnghiem-sections a {
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(112, 101, 101);
+}
+nav .thongbao-ele li,
+section .sukien-sections li,
+section .kinhnghiem-sections li {
+    
     display: block;
     padding: 10px 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -122,6 +144,7 @@ section .khoahoc-main {
     display: block;
     background-color: rgb(244, 241, 248);
     padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 section .section-header {
     display: block;
@@ -131,12 +154,14 @@ section .section-header > p {
     display: inline-block;
     padding: 30px 40px 0px 70px;
 }
-section .xemtatca {
-    display: inline-block;
+section .khoahoc-main .xemtatca {
     padding: 30px;
     right: 30px;
+    display: inline-block;
+    position: absolute; 
+}
+section .xemtatca {
     color: rgb(255, 186, 0);
-    position:absolute; 
     text-decoration: none;
 }
 section .xemtatca:hover {
@@ -159,4 +184,341 @@ section .khoahoc-ele > p {
     display: block;
     margin: 20px 30px 10px 30px;
 }
+section .sukien-main,
+section .kinhnghiem-main {
+    display: block;
+    position: a;
+    width: 100%;
+}
+section .kinhnghiem-main {
+    top: 50px;
+}
+section .sukien-header,
+section .kinhnghiem-header {
+    display: block;
+    text-align: left;
+    margin: 30px;
+    font-size: 20px;
+}
+section .sukien-header {
+    text-align: right;
+}
+section .kinhnghiem-header > b {
+    display: inline-block;
+    margin-left: 60px;
+}
+section .sukien-sections {
+    top: 50px;
+}
 
+section .sukien-sections p,
+section .kinhnghiem-sections p {
+    background-color:tomato;
+    color: #fff;
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+section .last {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+}
+.appWrapper-Footer-ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  footer h2 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .appWrapper-Footer-ul-mobile {
+    list-style-type: none;
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .appWrapper-Footer-a, .appWrapper-Footer-a:hover {
+    color: #4a4a4a;
+    font-family: Helvetica, Arial, sans-serif !important;
+    text-decoration: none;
+  }
+
+  
+  .appWrapper-MobileFooter {
+    background-color: #ffff;
+    border-top: 10px solid #f4f4f4;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  
+    @media (min-width: 768px) {
+      
+    .appWrapper-MobileFooter{
+      display: none;
+    }
+  
+    }
+  
+
+  .appWrapper-MobileFooter-badge {
+    display: grid;
+    padding: 5px 12px 12px 12px;
+    grid-template-columns: 50px 1fr 100px;
+    text-align: left;
+    border-bottom: 0.5px solid #d9d9d9;
+  }
+  .appWrapper-MobileFooter-badge-middle {
+    text-align: left;
+  }
+  .appWrapper-MobileFooter-badge-middle-text {
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 14px;
+  }
+  .appWrapper-MobileFooter-badge-middle-star {
+    font-size: 12px;
+  }
+
+  .appWrapper-MobileFooter-badge-middle-comment {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #9b9b9b;
+    line-height: 2.2;
+  }
+
+  
+    @media (max-width: 320px) {
+      
+      .appWrapper-MobileFooter-badge-middle-star{
+        font-size: 10px;
+      }
+      .appWrapper-MobileFooter-badge-middle-comment {
+        font-size: 10px;
+      }
+      .appWrapper-MobileFooter-badge {
+        grid-template-columns: 50px 1fr 90px;
+      }
+    
+    }
+  
+
+  .rating > span:before {
+    content: '★';
+    color: transparent;
+    left: 0;
+    font-size: 12px;
+    color: #ffba00;
+  }
+
+  
+    @media (max-width: 320px) {
+      
+      .rating > span:before {
+        font-size: 12px;
+      }
+    
+    }
+  
+
+  .appWrapper-MobileFooter-section {
+    margin: 15px 0;
+  }
+
+  .appWrapper-MobileFooter-section.sub-ul {
+    width: 42%;
+    margin: 0 auto;
+  }
+
+  .appWrapper-MobileFooter-li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .appWrapper-MobileFooter-li a {
+    font-size: 11px;
+  }
+
+  
+    @media (max-width: 320px) {
+      
+    .appWrapper-MobileFooter-li a {
+      font-size: 9.5px;
+    }
+  
+    }
+  
+
+  .appWrapper-MobileFooter-divider {
+    margin: 4px;
+  }
+
+  .appWrapper-MobileFooter-secondaryText {
+    color: #969696;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 11px;
+  }
+
+  .appWrapper-MobileFooter-appInstall {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  
+  .appWrapper-DesktopFooter {
+    background-color: #ffff;
+    border-top: 10px solid #f4f4f4;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .appWrapper-DesktopFooter-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .appWrapper-DesktopFooter-container-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 12px;
+  }
+
+  .appWrapper-DesktopFooter-container-bottom {
+    margin-top: 20px;
+  }
+
+  .appWrapper-DesktopFooter-address {
+    color: #9b9b9b;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  
+    @media (min-width: 768px) and (max-width: 991px) {
+      
+    .appWrapper-DesktopFooter-address {
+      font-size: 11px;
+    }
+    
+    }
+  
+
+  .appWrapper-DesktopFooter-item-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    text-align: left;
+  }
+
+  .appWrapper-DesktopFooter-item-row {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    text-align: left;
+  }
+
+  .appWrapper-DesktopFooter-item {
+    text-align: left;
+  }
+  .appWrapper-DesktopFooter-item-in-row {
+    padding-right: 12px;
+  }
+
+  .appWrapper-DesktopFooter-heading {
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif !important;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #15181f;
+    text-transform: uppercase;
+  }
+
+  .appWrapper-Footer-ul-row {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+  }
+
+  .appWrapper-DesktopFooter-li {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.29;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  .appWrapper-DesktopFooter-li {
+    margin-right: 16px;
+  }
+
+  .appWrapper-DesktopFooter-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .appWrapper-img-qr {
+    width: 87px;
+    height: 87px;
+  }
+
+  .appWrapper-DesktopFooter-hr-bottom {
+    border-top: 1px solid #f4f4f4;
+  }
+
+  
+    @media (min-width: 768px) {
+      
+    .appWrapper-DesktopFooter {
+      display: block;
+    }
+  
+    }
+  
+
+  
+    @media (max-width: 992px) {
+      
+    .appWrapper-DesktopFooter-container {
+      width: 100%;
+    }
+  
+    }
